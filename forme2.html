@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Z11-Forme</title>
+</head>
+<body>
+    <hr>
+    <form action="Registracija.php" method="post">
+        <label for="ime">First Name *</label>
+        <br>
+        <input type="text" id="ime" name="ime" placeholder="Vaše ime" required>
+        <br>
+        <label for="prezime">Last Name *</label>
+        <br>
+        <input type="text" id="prezime" name="prezime" placeholder="Vaše prezime" required>
+        <br>
+        <label for="drzava">Country</label>
+        <br>
+        <select id="drzava" name="drzava">
+            <option value="">Please select</option>
+            <option value="BE">Belgium</option>
+            <option value="HR" selected>Croatia</option>
+            <option value="LU">Luxembourg</option>
+            <option value="HU">Hungary</option>
+        </select>
+        <br>
+        <label for="poruka">Message</label>
+        <br>
+        <textarea class="form-control" name="poruka" id="poruka" placeholder="Write something"></textarea>    
+        <br>
+        <input type="button" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+    <hr>
+</body>
+</html>
